@@ -1,0 +1,5 @@
+# Created at 2025-06-01T07:25:21.423
+Boot Manifest-JAR contains absolute paths in classpath 'D:\workspace\mssql-mcp-server\mssql_mcp_server\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

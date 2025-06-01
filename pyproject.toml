@@ -1,13 +1,12 @@
 [project]
-name = "mssql_mcp_server"
-version = "0.1.2"
-description = "A Model Context Protocol (MCP) server that enables secure interaction with MSSQL databases. This server allows AI assistants to list tables, read data, and execute SQL queries through a controlled interface, making database exploration and analysis safer and more structured."
-readme = "README.md"
+name = "maven_startup_mcp_server"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server that enables secure interaction with Maven build processes. This server allows AI assistants to compile, test, and package Java projects through a controlled interface, providing a Python-based Maven wrapper."
+readme = "MAVEN_README.md"
 requires-python = ">=3.11"
 dependencies = [
     "httpx>=0.28.1",
     "mcp[cli]>=1.0.0",
-    "pyodbc>=5.2.0",
 ]
 [[project.authors]]
 name = "Jexin Sam"
@@ -18,4 +17,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.scripts]
-mssql_mcp_server = "mssql_mcp_server:main"
+maven_startup_mcp_server = "maven_startup_mcp_server:main"
+mvnw = "maven_startup_mcp_server.maven_wrapper:run_maven"
+mvn_compile = "maven_startup_mcp_server.maven_wrapper:compile"
+mvn_test = "maven_startup_mcp_server.maven_wrapper:run_tests"
